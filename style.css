@@ -50,3 +50,58 @@ main {
 #message:focus{
     outline: none;
 }
+
+.botoes-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.botao-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    gap: 10px;
+
+    width: 100%;
+    height: 45px;
+
+    color: #fff;
+    font-size: 16px;
+
+    background: #0a3871;
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+.botao-1:hover {
+    background: #1a5092;
+}
+
+.botao-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    gap: 10px;
+
+    width: 100%;
+    height: 45px;
+
+    color: #0a3871;
+    font-size: 16px;
+
+    background: transparent;
+    border-radius: 18px;
+    border: 1px solid #0a3871;
+    cursor: pointer;
+}
+
+.botao-2:hover {
+    background: #e0e7ff;
+}
