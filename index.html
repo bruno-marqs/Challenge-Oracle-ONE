@@ -27,22 +27,23 @@
                 <textarea type="text" id="message" cols="30" rows="10" maxlength="1000" placeholder="Digite aqui o seu texto..."></textarea>
             </article>
 
-            <p>&#9888; Apenas letras minúsculas e sem acentos</p>
+            <p class="oculto">&#9888; Apenas letras minúsculas e sem acentos</p>
             <div class="botoes-div">
                 <button class="botao-1" onclick="">Criptografar</button>
 
                 <button class="botao-2" onclick="">Descriptografar</button>
             </div>
         </section>
+
         <section class="cifrado">
-            <article>
-                <div>
+            <article class="">
+                <div id="conteudo-cifrado" class="oculto">
                     <p id="conteudo"></p>
                     <button class="botao-2" onclick="">Copiar</button>
                 </div>
 
-                <div>
-                    <img src="" alt="nada-aparece" />
+                <div class="sem-conteudo" id="sem-conteudo">
+                    <img src="/Challenge-Oracle-ONE/images/no-find.svg" alt="nada-aparece" />
                     <h3>Não há nenhuma mensagem aqui.</h3>
                     <p>Escreva alguma mensagem para criptografar ou descriptografar</p>
                 </div>
@@ -51,9 +52,11 @@
     </main>
 
     <footer>
-        <a href="https://www.linkedin.com/in/b-marques/"><img width="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"/>LinkedIn</a>
-        <a href="https://github.com/o-Drive"><img width="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />GitHub</a>
-        Developed by Bruno Marques - 2022
+        <p>Developed by Bruno Marques - 2022</p>
+        <div class="link">
+            <a href="https://www.linkedin.com/in/b-marques/"><img width="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"/>LinkedIn</a>
+            <a href="https://github.com/o-Drive"><img width="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />Github</a>
+        </div>
     </footer>
 </body>
 </html>
