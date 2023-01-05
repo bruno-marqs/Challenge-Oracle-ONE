@@ -51,6 +51,16 @@ main {
     outline: none;
 }
 
+section p {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items:flex-start;
+    color: #1a5092;
+    font-weight: bold;
+    font-size: 12px;
+}
+
 .botoes-div {
     display: flex;
     flex-direction: row;
