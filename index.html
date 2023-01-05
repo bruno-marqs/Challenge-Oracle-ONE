@@ -23,11 +23,16 @@
 
     <main>
         <section class="original">
-            <textarea type="text" id="message" cols="30" rows="10" maxlength="1000" placeholder="Digite aqui o seu texto..."></textarea>
+            <article>
+                <textarea type="text" id="message" cols="30" rows="10" maxlength="1000" placeholder="Digite aqui o seu texto..."></textarea>
+            </article>
 
             <p>&#9888; Apenas letras minúsculas e sem acentos</p>
-            <input type="button" value="Criptografar" onclick="" class="botao">
-            <input type="button" value="Descriptografar" onclick="" class="botao">
+            <div class="botoes-div">
+                <button class="botao-1" onclick="">Criptografar</button>
+
+                <button class="botao-2" onclick="">Descriptografar</button>
+            </div>
         </section>
         <aside>
             <label for="crypto-message"></label>
