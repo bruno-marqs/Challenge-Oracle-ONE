@@ -22,6 +22,21 @@ nav {
     height: 48px;
 }
 
+.switch-mode{
+    position: relative;
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid #0a3871;
+    cursor: pointer;
+}
+
 main {
     display: flex;
     flex-direction: row;
@@ -180,6 +195,6 @@ footer {
     display: flex;
     flex-direction: row;
     text-decoration: none; 
-    gap: 10px;
+    padding: 0 15px;
     color: #0a3871;
 }
