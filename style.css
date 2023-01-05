@@ -22,19 +22,30 @@ nav {
     height: 48px;
 }
 
+.botao-nav{
+    display: flex;
+    margin-left: auto;
+
+}
+
 .switch-mode{
     position: relative;
     margin: 20px 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
     padding: 10px;
+
+    height: 30px;
 
     background: transparent;
     border-radius: 5px;
-    border: 1px solid #0a3871;
+    border: 1px solid #cacdda;
     cursor: pointer;
+}
+
+.switch-mode:hover {
+    background: #373737;
 }
 
 main {
@@ -42,6 +53,7 @@ main {
     flex-direction: row;
     justify-content: center;
     padding: 20px 20px;
+    padding-top: 0;
     min-height: 90vh;
 }
 
