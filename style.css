@@ -8,6 +8,7 @@
 
 body {
    background: #f3f5fc;
+   transition: 2s;
 }
 
 nav {
@@ -209,4 +210,10 @@ footer {
     text-decoration: none; 
     padding: 0 15px;
     color: #0a3871;
+}
+
+/* modo noturno */
+.dark-mode{
+    background: #373737;
+    
 }
