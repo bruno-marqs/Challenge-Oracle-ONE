@@ -29,22 +29,22 @@
                 <textarea type="text" id="message" cols="30" rows="10" maxlength="1000" placeholder="Digite aqui o seu texto..."></textarea>
             </article>
 
-            <p class="oculto">&#9888; Apenas letras minúsculas e sem acentos</p>
+            <p>&#9888; Apenas letras minúsculas e sem acentos</p>
             <div class="botoes-div">
-                <button class="botao-1" onclick="">Criptografar</button>
+                <button class="botao-1" onclick="crypto()" id="crypto">Criptografar</button>
 
-                <button class="botao-2" onclick="">Descriptografar</button>
+                <button class="botao-2" onclick="decrypto()">Descriptografar</button>
             </div>
         </section>
 
         <section class="cifrado">
             <article class="">
-                <div id="conteudo-cifrado" class="oculto">
+                <div id="conteudo_cifrado" class="oculto">
                     <p id="conteudo"></p>
-                    <button class="botao-2" onclick="">Copiar</button>
+                    <button class="botao-2" onclick="copiar()">Copiar</button>
                 </div>
-
-                <div class="sem-conteudo" id="sem-conteudo">
+                
+                <div class="sem_conteudo" id="sem_conteudo">
                     <img src="/Challenge-Oracle-ONE/images/no-find.svg" alt="nada-aparece" />
                     <h3>Não há nenhuma mensagem aqui.</h3>
                     <p>Escreva alguma mensagem para criptografar ou descriptografar</p>
