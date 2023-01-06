@@ -168,7 +168,7 @@ section p {
 
 .cifrado p {
     text-align: center;
-    color: #495057;
+    color: #0a3871;
 }
 
 .conteudo_cifrado {
@@ -181,7 +181,7 @@ section p {
     height: 100%;
 }
 
-.conteudo_cifrado p {
+#conteudo_cifrado p {
     width: 100%;
     font-size: 25px;
 }
@@ -189,7 +189,14 @@ section p {
 .sem_conteudo {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
+    margin-top: auto;
+}
+
+article button{
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
 }
 
 .oculto {
