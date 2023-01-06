@@ -226,6 +226,6 @@ footer {
 
 /* modo noturno */
 .dark-mode{
-    background: #373737;
+    background:  #373737 !important;
     
 }

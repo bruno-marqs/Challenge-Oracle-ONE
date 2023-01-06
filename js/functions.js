@@ -17,11 +17,11 @@ function crypto() {
         alert("Insira antes uma mensagem!")
     }
     else {
-        var textoCifrado = texto.replace(/a/igm,"ai");
-        var textoCifrado = textoCifrado.replace(/e/igm,"enter");
-        var textoCifrado = textoCifrado.replace(/i/igm,"imes");
-        var textoCifrado = textoCifrado.replace(/o/igm,"ober");
-        var textoCifrado = textoCifrado.replace(/u/igm,"ufat");
+        var textoCifrado = texto.replace(/e/ig,"enter");
+        var textoCifrado = textoCifrado.replace(/i/ig,"imes");
+        var textoCifrado = textoCifrado.replace(/a/ig,"ai");
+        var textoCifrado = textoCifrado.replace(/o/ig,"ober");
+        var textoCifrado = textoCifrado.replace(/u/ig,"ufat");
 
         noContent.classList.add("oculto");
         content.classList.remove("oculto");
@@ -30,3 +30,22 @@ function crypto() {
     }
 };
 
+function decrypto() {
+    var texto = document.getElementById("message").value.toLowerCase();
+
+    if(texto == ""){
+        alert("Insira antes uma mensagem criptografada!")
+    }
+    else {
+        var textoCifrado = texto.replace(/enter/ig,"e");
+        var textoCifrado = textoCifrado.replace(/imes/ig,"i");
+        var textoCifrado = textoCifrado.replace(/ai/ig,"a");
+        var textoCifrado = textoCifrado.replace(/ober/ig,"o");
+        var textoCifrado = textoCifrado.replace(/ufat/ig,"u");
+
+        noContent.classList.add("oculto");
+        content.classList.remove("oculto");
+
+        document.getElementById("conteudo_cifrado").innerHTML = textoCifrado;
+    }
+}
