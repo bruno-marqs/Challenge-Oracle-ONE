@@ -26,7 +26,7 @@ function crypto() {
         noContent.classList.add("oculto");
         content.classList.remove("oculto");
 
-        document.getElementById("conteudo_cifrado").innerHTML = textoCifrado;
+        document.getElementById("conteudo").innerHTML = textoCifrado;
     }
 };
 
@@ -49,3 +49,16 @@ function decrypto() {
         document.getElementById("conteudo_cifrado").innerHTML = textoCifrado;
     }
 }
+
+    /* funcao copiar */
+    
+    const copiar = async () => {
+        try {
+            await navigator.clipboard.writeText(content.textContent);
+            alert("Texto copiado");
+        }
+        catch (err) {
+            alert("Erro ao copiar")
+        }
+
+    }
