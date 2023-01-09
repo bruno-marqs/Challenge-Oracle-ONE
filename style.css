@@ -146,6 +146,13 @@ section p {
     background: #e0e7ff;
 }
 
+.btns {
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    gap: 10px;
+}
+
 .cifrado {
     display: flex;
     flex-direction: column;
@@ -226,6 +233,6 @@ footer {
 
 /* modo noturno */
 .dark-mode{
-    background:  #373737 !important;
-    
+    background:  #373737;
+    color:after orangered;
 }
