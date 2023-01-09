@@ -153,6 +153,14 @@ section p {
     gap: 10px;
 }
 
+#copiar{
+    padding: 24px 80px;
+}
+
+#limpar:hover{
+    background: #ffe5c3;
+}
+
 .cifrado {
     display: flex;
     flex-direction: column;
@@ -231,8 +239,9 @@ footer {
     color: #0a3871;
 }
 
+
 /* modo noturno */
 .dark-mode{
     background:  #373737;
-    color:after orangered;
+    color: orangered;
 }

@@ -1,10 +1,3 @@
-function contraste() {
-    
-    document.querySelector("#dark").addEventListener("click", () => {
-        document.body.classList.toggle("dark-mode")
-    })
-
-};
 
 const noContent = document.querySelector("#sem_conteudo");
 const content = document.querySelector("#conteudo_cifrado");
@@ -52,13 +45,24 @@ function decrypto() {
 
     /* funcao copiar */
     
-    const copiar = async () => {
-        try {
-            await navigator.clipboard.writeText(content.textContent);
-            alert("Texto copiado");
-        }
-        catch (err) {
-            alert("Erro ao copiar")
-        }
-
+const copiar = async () => {
+    try {
+        await navigator.clipboard.writeText(content.textContent);
+        alert("Texto copiado");
     }
+    catch (err) {
+        alert("Erro ao copiar");
+    }
+
+}
+
+    /* funcao limpar */
+document.querySelector("#limpar").addEventListener("click", function(){
+    location.reload();
+})
+
+    /* funcao dark */
+
+document.querySelector("#dark").addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode")
+})
