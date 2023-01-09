@@ -157,6 +157,10 @@ section p {
     padding: 24px 80px;
 }
 
+#copiar:hover {
+    background: #f6f8ff;
+}
+
 #limpar:hover{
     background: #ffe5c3;
 }
