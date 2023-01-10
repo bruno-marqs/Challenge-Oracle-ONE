@@ -147,11 +147,21 @@ section p {
 }
 
 .btns {
+    visibility: hidden;
     display: flex;
     flex-direction: row;
     margin-top: auto;
     gap: 10px;
 }
+
+.btns-visible {
+    visibility: visible;
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    gap: 10px;
+}
+
 
 #copiar{
     padding: 24px 80px;

@@ -1,6 +1,7 @@
 
 const noContent = document.querySelector("#sem_conteudo");
 const content = document.querySelector("#conteudo_cifrado");
+const visible = document.querySelector("#btn-visibility");
 
 function crypto() {
 
@@ -16,6 +17,8 @@ function crypto() {
         var textoCifrado = textoCifrado.replace(/o/ig,"ober");
         var textoCifrado = textoCifrado.replace(/u/ig,"ufat");
 
+        visible.classList.remove("btns");
+        visible.classList.add("btns-visible");
         noContent.classList.add("oculto");
         content.classList.remove("oculto");
 
@@ -36,6 +39,8 @@ function decrypto() {
         var textoCifrado = textoCifrado.replace(/ober/ig,"o");
         var textoCifrado = textoCifrado.replace(/ufat/ig,"u");
 
+        visible.classList.remove("btns");
+        visible.classList.add("btns-visible");
         noContent.classList.add("oculto");
         content.classList.remove("oculto");
 
@@ -64,5 +69,5 @@ document.querySelector("#limpar").addEventListener("click", function(){
     /* funcao dark */
 
 document.querySelector("#dark").addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode")
+    document.body.classList.toggle("dark-mode");
 })
