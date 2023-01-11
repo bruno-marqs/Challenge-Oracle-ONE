@@ -1,4 +1,7 @@
 :root {
+    --logo-img: url(/Challenge-Oracle-ONE/images/logo-a.svg);
+    --nofind-img: url(/Challenge-Oracle-ONE/images/no-find.svg);
+
     --body-bg: #f3f5fc;
     --footer-bg: linear-gradient(180deg, rgba(243,245,252,1) 30%, rgba(184,210,244,1) 100%);
     --boxshadow-bg: 0 10px 15px #c4c7d4;
@@ -17,7 +20,7 @@
     --btn2-border: 1px solid #0a3871;
 
     --copiar-bg-hover: #f6f8ff;
-    --limpar-bg-hover: #ffe5c3;
+    --limpar-bg-hover: #f6f8ff;
 
     --switch-border: 1px solid #cacdda;
     --switch-bg-hover: #373737;
@@ -25,19 +28,31 @@
 
     /* modo noturno */
 .dark-mode {
+    --logo-img: url(/Challenge-Oracle-ONE/images/logo-b.svg);
+    --nofind-img: url(/Challenge-Oracle-ONE/images/no-find-b.svg);
+
     --body-bg: #373737;
-    --footer-bg: linear-gradient(180deg, rgba(243,245,252,1) 30%, rgba(184,210,244,1) 100%);
-    --boxshadow-bg: 0 10px 15px #c4c7d4;
+    --footer-bg: linear-gradient(180deg, #373737 30%, #292929 100%);
+    --boxshadow-bg: 0 10px 15px #282828;
 
-    --body-color: #0a3871;
-    --p-color: #1a5092;
-    --btn1-color: #fff;
-    --btn2-color: #0a3871;
+    --conteudo-bg: #585858;
 
-    --btn1-bg-hover: #1a5092;
-    --btn2-bg-hover: #e0e7ff;
-    --copiar-bg-hover: #f6f8ff;
-    --limpar-bg-hover: #ffe5c3;
+    --body-color: #ffb800;
+    --p-color: #ffb800;
+    --alert-color: #ffb700;
+    --btn1-color: #402E00;
+    --btn2-color: #ffb800;
+
+    --btn1-bg: #ffb800;
+    --btn1-bg-hover: #ffce51;
+    --btn2-bg-hover: #292929;
+    --btn2-border: 1px solid #ffb800;
+
+    --copiar-bg-hover: #484848;
+    --limpar-bg-hover: #484848;
+
+    --switch-border: 1px solid #cacdda;
+    --switch-bg-hover: #f3f5fc;
 }
 
     /* estilização */
@@ -51,7 +66,7 @@
 
 body {
    background: var(--body-bg);
-   transition: 2s;
+   transition: 1s;
 }
 
 nav {
@@ -60,8 +75,10 @@ nav {
 }
 
 .logo-nav {
-    position: relative;
-    margin: 20px 20px;
+    background-image: var(--logo-img);
+    background-repeat: no-repeat;
+    position: absolute;
+    margin: 38px 36px;
     width: 120px;
     height: 48px;
 }
@@ -227,7 +244,7 @@ section p {
     border-radius: 36px;
     box-shadow: var(--boxshadow-bg);
     width: 400px;
-    height:90vh;
+    height: 90vh;
     padding: 20px;
 }
 
@@ -263,6 +280,18 @@ section p {
     flex-direction: column;
     align-items:center;
     margin-top: auto;
+    width:100%;
+    height: 100%;
+}
+
+.img-search {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: var(--nofind-img);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 50px;
 }
 
 article button{
@@ -276,6 +305,7 @@ article button{
 }
 
 footer {
+    transition: 2s;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -284,7 +314,7 @@ footer {
     padding: 50px;
     background: var(--footer-bg);
     font-family: 'Montserrat', sans-serif;
-    color: #0a3871;
+    color: var(--body-color);
     font-weight: bold;
 }
 
