@@ -71,10 +71,6 @@ function limpar(){
     visible.classList.remove("btns-visible");
     visible.classList.add("btns");
     noContent.classList.remove("oculto");
-    // document.querySelector("#conteudo").classList.add("oculto");
-
-    
-
 }
 
     /* funcao dark */
