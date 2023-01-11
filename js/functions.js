@@ -44,7 +44,7 @@ function decrypto() {
         noContent.classList.add("oculto");
         content.classList.remove("oculto");
 
-        document.getElementById("conteudo_cifrado").innerHTML = textoCifrado;
+        document.getElementById("conteudo").innerHTML = textoCifrado;
     }
 }
 
@@ -62,18 +62,17 @@ const copiar = async () => {
 }
 
     /* funcao limpar */
-// document.querySelector("#limpar").addEventListener("click", function(){
-//     location.reload();
-// })
 
 function limpar(){
     var textoVazio = "";
 
-    visible.classList.remove("btns-visible")
+    document.getElementById("conteudo").innerHTML = textoVazio;
+
+    visible.classList.remove("btns-visible");
     visible.classList.add("btns");
     noContent.classList.remove("oculto");
-    
-    document.getElementById("conteudo").innerHTML = textoVazio;
+    // document.querySelector("#conteudo").classList.add("oculto");
+
     
 
 }
