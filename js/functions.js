@@ -62,9 +62,21 @@ const copiar = async () => {
 }
 
     /* funcao limpar */
-document.querySelector("#limpar").addEventListener("click", function(){
-    location.reload();
-})
+// document.querySelector("#limpar").addEventListener("click", function(){
+//     location.reload();
+// })
+
+function limpar(){
+    var textoVazio = "";
+
+    visible.classList.remove("btns-visible")
+    visible.classList.add("btns");
+    noContent.classList.remove("oculto");
+    
+    document.getElementById("conteudo").innerHTML = textoVazio;
+    
+
+}
 
     /* funcao dark */
 
