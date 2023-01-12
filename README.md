@@ -1,6 +1,6 @@
 # Challenge-Oracle-ONE
 
-## Link do sistema para testes
+### Desafio concluído
 https://o-drive.github.io/Challenge-Oracle-ONE/
 
 
